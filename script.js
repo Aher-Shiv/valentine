@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (backgroundAudio) {
         backgroundAudio.volume = 0.5; // Adjust background volume
+        backgroundAudio.currentTime = 30;
         backgroundAudio.play().catch(error => console.error("Error playing background audio:", error));
     }
 
